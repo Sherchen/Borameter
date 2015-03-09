@@ -1,10 +1,10 @@
-The preview image is like that
 ![image](https://github.com/Sherchen/Borameter/blob/master/borameter.gif)
 
 I hope you guy will like it, you will find the ui is not perfect, because all of ui is drawn by canvas,
 
 <code>
-@Override
+
+	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
 		if(m_NeedRedraw){
@@ -12,9 +12,11 @@ I hope you guy will like it, you will find the ui is not perfect, because all of
 			drawCircle(canvas);
 			drawScale(canvas);
 			drawCenter(canvas);
-//			m_NeedDraw = false;
+	//		m_NeedDraw = false;
 		}
 	}
+
+
 </code>
 
 If you want to make the ui much more good-looking, you can use your image instead.

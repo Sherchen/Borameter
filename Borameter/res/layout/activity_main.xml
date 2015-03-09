@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dp" >
+
+    <com.sherchen.Borameter.BorameterScale
+        android:id="@+id/ccContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+        
+
+	<com.sherchen.Borameter.BorameterCursor
+        android:id="@+id/cvTest"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+	<Button
+	    android:id="@+id/btn_start"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/ccContainer"
+	    android:layout_alignLeft="@+id/ccContainer"
+	    android:text="start" />
+
+	<Button
+	    android:id="@+id/btn_stop"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/ccContainer"
+	    android:layout_alignRight="@+id/ccContainer"
+	    android:text="stop" />
+
+	<TextView
+	    android:id="@+id/tv_display_current"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/btn_start"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="28dp"
+	    android:text="show the current borameter value" />
+	
+</RelativeLayout>
